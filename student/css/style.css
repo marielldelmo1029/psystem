@@ -1,0 +1,108 @@
+/* Sidebar Styling */
+body{
+    background: lightblue;
+  }
+/*
+.sidebar {
+    position: fixed;
+    margin-top: -70px;
+    left: 0;
+    width: 250px;
+    height: 250%;
+    background: #007bff; 
+    padding-top: 20px;
+    z-index: 1000;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #5a8fff;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #5a8fff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #5a8fff;
+    font-weight: bold;
+}
+*/
+/* Page Content */
+.page-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease; /* Smooth transition for page shift */
+}
+
+/* Card Container (for dashboard cards) */
+.card-container {
+    display: flex; /* Use flexbox to arrange cards in a row */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align cards to the left */
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    width: calc(50% - 10px); /* Adjust the width to fit two cards in a row */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card .card-body {
+    background-color: transparent;
+    padding: 1.5rem;
+}
+
+.card-header {
+    background-color: #007bff; /* Match sidebar color */
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Reduce sidebar width on small screens */
+    }
+
+    .page-content {
+        margin-left: 200px; /* Adjust content area to fit smaller sidebar */
+    }
+
+    .card {
+        width: 100%; /* Stack cards vertically on smaller screens */
+    }
+}
+
+/* Form Section */
+.form-section {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}

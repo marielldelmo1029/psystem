@@ -1,0 +1,54 @@
+/* Sidebar Styling */
+.sidebar {
+    position: fixed; /* Fix the sidebar to the left side */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left side */
+    width: 250px; /* Set the width of the sidebar */
+    height: 100vh; /* Make it the full height of the viewport */
+    background-color: #007bff; /* Dark background color */
+    color: white; /* White text color */
+    padding-top: 20px; /* Add some padding to the top */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a shadow to the right of the sidebar */
+}
+
+/* Sidebar Links */
+.sidebar .nav-item {
+    list-style: none; /* Remove list style */
+}
+
+.sidebar .nav-link {
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Vertically center the icons and text */
+    padding: 15px; /* Add padding for better spacing */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0056b3; /* Change background on hover */
+}
+
+.sidebar .menu-title {
+    margin-left: 10px; /* Add space between the icon and text */
+    font-size: 16px; /* Set the font size */
+}
+
+.sidebar .menu-icon {
+    font-size: 20px; /* Icon size */
+}
+
+/* Sidebar Icon */
+.sidebar .nav-link .menu-icon {
+    font-size: 24px; /* Larger icon size */
+}
+
+/* For screens larger than 992px, keep sidebar fixed */
+@media (max-width: 992px) {
+    .sidebar {
+        position: absolute; /* Reset to absolute for smaller screens */
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height on smaller screens */
+    }
+}

@@ -1,0 +1,70 @@
+body {
+    background-color: #f3f7fc; /* Light blue-gray background */
+    color: #212529;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #007bff; /* Vibrant blue */
+    color: #ffffff;
+    border-right: 1px solid #0056b3; /* Darker blue border for better contrast */
+    padding: 20px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #0056b3; /* Darker vibrant blue */
+    color: #e6f0ff; /* Light blue text on hover */
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #d6e0f5; /* Light blue border for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.card h5, .card h4 {
+    color: #007bff; /* Vibrant blue text */
+}
+
+.btn-light {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.btn-light:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.dropdown-menu {
+    background-color: #f3f7fc; /* Match the background */
+    border: 1px solid #d6e0f5;
+    margin-left: -100px;
+}
+
+.dropdown-menu a {
+    color: #007bff;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e6f0ff; /* Very light blue */
+}
+  
+  
+  
